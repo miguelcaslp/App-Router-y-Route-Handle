@@ -1,39 +1,42 @@
 ###
 
-GET http://localhost:3000/api/users
+GET http://localhost:3000/api/products
 
 ###
-POST http://localhost:3000/api/users
+POST http://localhost:3000/api/products
 Content-Type: application/json
 
 {
-    "nombre": "Alejandro",
-    "edad": 88
+    "nombre": "Router", 
+    "precio": 13,
+    "marca": "Tp-link"
 }
 
 ###
 
-GET http://localhost:3000/api/users/4
+GET http://localhost:3000/api/products/3
 
 ###
 
-POST http://localhost:3000/api/users HTTP/1.1
+POST http://localhost:3000/api/products HTTP/1.1
 Content-Type: application/json
 
 { 
-    "nombre": "Hernando", 
-    "edad": 19 
+    "nombre": "Mochila", 
+    "precio": 33,
+    "marca": "Hacendado"
 }
 
 ###
 
-PUT http://localhost:3000/api/users/7 HTTP/1.1
+PUT http://localhost:3000/api/products/3 HTTP/1.1
 Content-Type: application/json
 
 { 
-    "nombre": "Alberto", 
-    "edad": 99 
+    "nombre": "Pizarra", 
+    "precio": 330,
+    "marca": "Almor"
 }
 
 ###
-DELETE http://localhost:3000/api/users/4
+DELETE http://localhost:3000/api/users/1
